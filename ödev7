@@ -55,14 +55,14 @@ public class Main {
 package org.odev7;
 
 enum Gezegen {
-    MERKUR(1,"57.000.000 km",4.884,"10,892 km/sa","17 Gün","MERKÜR"),
-    VENUS(2,"110.000.000 km",12.346,"9,56 km/sa","243 gün","VENÜS"),
-    DUNYA(3,"148.000.000 km",12.709,"5,55 km/sa","24 saat","DÜNYA"),
-    MARS(4,"230.000.000 km",6.767,"1,55 km/sa","24 saat","MARS"),
-    JUPITER(5,"780.000.000 km",142.647,"14,79 km/sa","9 saat 54 dakika","JÜPİTER"),
-    SATURN(6,"1.438.000.000 km",124.309,"87,566 km/sa","10 saat 37 dakika","SATÜRN"),
-    URANUS(7,"2.970.000.000 km",51.767 ,"67,76 km/sa","18 saat 23 dakika","URANÜS"),
-    NEPTUN(8,"4.568.000.000 km",49.138,"74,52 km/sa","16 saat 28 dakika","NEPTÜN");
+    MERKUR(1,"50.000.000 km",4.000,"10,802 km/sa","10 Gün","MERKÜR"),
+    VENUS(2,"1223.000.000 km",10.246,"9,56 km/sa","222 gün","VENÜS"),
+    DUNYA(3,"186.000.000 km",15.801,"5,55 km/sa","23 saat","DÜNYA"),
+    MARS(4,"255.000.000 km",1.568,"1,65 km/sa","21 saat","MARS"),
+    JUPITER(5,"782.000.000 km",122.147,"24,79 km/sa","6 saat","JÜPİTER"),
+    SATURN(6,"1.523.000.000 km",184.113,"77,466 km/sa","14 saat","SATÜRN"),
+    URANUS(7,"1.768.000.000 km",82.967 ,"77,76 km/sa","15 saat 53 dakika","URANÜS"),
+    NEPTUN(8,"2.589.000.000 km",49.138,"77,52 km/sa","20 saat 28 dakika","NEPTÜN");
 
     int numara;
     String uzaklik;

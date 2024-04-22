@@ -1,36 +1,54 @@
-package org.testodev;
-
-import javax.swing.*;
-import java.util.HashMap;
-import java.util.Map;
-
 public class Main {
     public static void main(String[] args) {
 
-        String[] metinDizisi = {"Merhaba", "Meliha", "İpek", "Test", "Otomasyon", "Kursu"};
-
-        String yeniMetin = algoritma(metinDizisi);
-        System.out.println("Oluşturulan Yeni Metin : " + yeniMetin);
-        JOptionPane.showMessageDialog(null,"Oluşturulan Yeni Metin: \n" + yeniMetin);
-
+        Gezegen gezegenler = Gezegen.MERKUR;
+        gezegenlerBilgi(gezegenler);
     }
-
-    public static String algoritma(String[] metinDizisi) {
-        StringBuilder birlesmisMetin = new StringBuilder();
-
-        for (String metin : metinDizisi) {
-            for (int i = 0; i < metin.length(); i++) {
-                char karakter = metin.charAt(i);
-
-                // Yeni metinde bu karakter daha önce yoksa ekle
-                if (birlesmisMetin.indexOf(String.valueOf(karakter)) == -1) {
-                    birlesmisMetin.append(karakter);
-                }
-            }
+    static void gezegenlerBilgi (Gezegen gezegenler)
+    {
+        String ayrac="----------------------------------------------------------------------------------------------------------------------------------------------------------";
+        switch (gezegenler) {
+            case MERKUR :
+                System.out.println(ayrac);
+                System.out.println("Gezegen: " + gezegenler.gezegenAdi + " || Güneşe Uzaklığı Sıra No: " + gezegenler.numara + " || Güneşe Uzaklığı: " + gezegenler.uzaklik + "  || Yarıçapı: " + gezegenler.yariCap + " || Dönme Süresi: " + gezegenler.donmeSuresi +" || Gün Uzunluğu: " + gezegenler.gunUzunlugu);
+                System.out.println(ayrac);
+                break;
+            case VENUS :
+                System.out.println(ayrac);
+                System.out.println("Gezegen: " + gezegenler.gezegenAdi + " || Güneşe Uzaklığı Sıra No: " + gezegenler.numara + " || Güneşe Uzaklığı: " + gezegenler.uzaklik + "  || Yarıçapı: " + gezegenler.yariCap + " || Dönme Süresi: " + gezegenler.donmeSuresi +" || Gün Uzunluğu: " + gezegenler.gunUzunlugu);
+                System.out.println(ayrac);
+                break;
+            case DUNYA :
+                System.out.println(ayrac);
+                System.out.println("Gezegen: " + gezegenler.gezegenAdi + " || Güneşe Uzaklığı Sıra No: " + gezegenler.numara + " || Güneşe Uzaklığı: " + gezegenler.uzaklik + "  || Yarıçapı: " + gezegenler.yariCap + " || Dönme Süresi: " + gezegenler.donmeSuresi +" || Gün Uzunluğu: " + gezegenler.gunUzunlugu);
+                System.out.println(ayrac);
+                break;
+            case MARS :
+                System.out.println(ayrac);
+                System.out.println("Gezegen: " + gezegenler.gezegenAdi + " || Güneşe Uzaklığı Sıra No: " + gezegenler.numara + " || Güneşe Uzaklığı: " + gezegenler.uzaklik + "  || Yarıçapı: " + gezegenler.yariCap + " || Dönme Süresi: " + gezegenler.donmeSuresi +" || Gün Uzunluğu: " + gezegenler.gunUzunlugu);
+                System.out.println(ayrac);
+                break;
+            case JUPITER :
+                System.out.println(ayrac);
+                System.out.println("Gezegen: " + gezegenler.gezegenAdi + " || Güneşe Uzaklığı Sıra No: " + gezegenler.numara + " || Güneşe Uzaklığı: " + gezegenler.uzaklik + "  || Yarıçapı: " + gezegenler.yariCap + " || Dönme Süresi: " + gezegenler.donmeSuresi +" || Gün Uzunluğu: " + gezegenler.gunUzunlugu);
+                System.out.println(ayrac);
+                break;
+            case SATURN :
+                System.out.println(ayrac);
+                System.out.println("Gezegen: " + gezegenler.gezegenAdi + " || Güneşe Uzaklığı Sıra No: " + gezegenler.numara + " || Güneşe Uzaklığı: " + gezegenler.uzaklik + "  || Yarıçapı: " + gezegenler.yariCap + " || Dönme Süresi: " + gezegenler.donmeSuresi +" || Gün Uzunluğu: " + gezegenler.gunUzunlugu);
+                System.out.println(ayrac);
+                break;
+            case URANUS :
+                System.out.println(ayrac);
+                System.out.println("Gezegen: " + gezegenler.gezegenAdi + " || Güneşe Uzaklığı Sıra No: " + gezegenler.numara + " || Güneşe Uzaklığı: " + gezegenler.uzaklik + "  || Yarıçapı: " + gezegenler.yariCap + " || Dönme Süresi: " + gezegenler.donmeSuresi +" || Gün Uzunluğu: " + gezegenler.gunUzunlugu);
+                System.out.println(ayrac);
+                break;
+            case NEPTUN :
+                System.out.println(ayrac);
+                System.out.println("Gezegen: " + gezegenler.gezegenAdi + " || Güneşe Uzaklığı Sıra No: " + gezegenler.numara + " || Güneşe Uzaklığı: " + gezegenler.uzaklik + "  || Yarıçapı: " + gezegenler.yariCap + " || Dönme Süresi: " + gezegenler.donmeSuresi +" || Gün Uzunluğu: " + gezegenler.gunUzunlugu);
+                System.out.println(ayrac);
+                break;
         }
-
-        return birlesmisMetin.toString();
-
-
     }
 }
+
